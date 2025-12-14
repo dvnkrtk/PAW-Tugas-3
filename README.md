@@ -52,7 +52,6 @@ Menganalisis review baru.
 {
   "review": "Produk ini sangat bagus dan berkualitas"
 }
-```json
 
 **Response**
 ```json
@@ -61,7 +60,6 @@ Menganalisis review baru.
   "key_points": ["kualitas bagus", "produk memuaskan"],
   "created_at": "2025-01-01T10:00:00"
 }
-```json
 
 ### 🔹GET /api/reviews
 Mengambil seluruh data
@@ -75,8 +73,6 @@ Mengambil seluruh data
     "created_at": "2025-01-01T10:00:00"
   }
 ]
-```json
-
 
 ## Setup dan Cara Menjalankan
 
@@ -85,35 +81,29 @@ Mengambil seluruh data
 ```bash
 git clone https://github.com/dvnkrtk/PAW-Tugas-3.git 
 cd product-review-analyzer/backend
-```bash
 
 2. Virtual Environment
 ```bash
 python -m venv venv
 source venv/bin/activate   # Linux / Mac
 venv\Scripts\activate      # Windows
-```bash
 
 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
-```bash
 
 4. Environment Variables
 ```bash
 DATABASE_URL=postgresql://user:123@localhost:5432/review_db
 HUGGINGFACE_API_KEY=your_huggingface_api_key
 GEMINI_API_KEY=your_gemini_api_key
-```bash
 
 5. Run Backend
 ```bash
 uvicorn app.main:app --reload
-```bash
 
 🔹 Frontend Setup
 ```bash
 cd ../frontend
 npm install
 npm run dev
-```bash
