@@ -20,8 +20,12 @@ Product Review Analyzer adalah aplikasi **AI-powered Full Stack** yang digunakan
 
 ---
 
-## Tech Stack
+## Dokumentasi Hasil
+![img1](https://github.com/dvnkrtk/PAW-Tugas-3/blob/main/img/Home.png)
 
+---
+
+## Tech Stack
 ### Backend
 - Python
 - FastAPI
