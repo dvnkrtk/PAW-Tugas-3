@@ -65,7 +65,6 @@ GEMINI_API_KEY=your_gemini_api_key
 5. Run Backend
 uvicorn app.main:app --reload
 
-
 🔹 Frontend Setup
 cd ../frontend
 npm install
