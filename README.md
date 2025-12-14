@@ -42,38 +42,6 @@ Aplikasi ini menggunakan **arsitektur client-server** dengan pendekatan **RESTfu
 
 ---
 
-## API Endpoints
-
-### 🔹 POST /api/analyze-review
-Menganalisis review baru.
-
-**Request Body**
-```json
-{
-  "review": "Produk ini sangat bagus dan berkualitas"
-}
-
-**Response**
-```json
-{
-  "sentiment": "positive",
-  "key_points": ["kualitas bagus", "produk memuaskan"],
-  "created_at": "2025-01-01T10:00:00"
-}
-
-### 🔹GET /api/reviews
-Mengambil seluruh data
-```json
-[
-  {
-    "id": 1,
-    "review": "Produk ini sangat bagus",
-    "sentiment": "positive",
-    "key_points": ["kualitas bagus"],
-    "created_at": "2025-01-01T10:00:00"
-  }
-]
-
 ## Setup dan Cara Menjalankan
 
 🔹 Backend Setup
@@ -102,8 +70,44 @@ GEMINI_API_KEY=your_gemini_api_key
 ```bash
 uvicorn app.main:app --reload
 
+
 🔹 Frontend Setup
 ```bash
 cd ../frontend
 npm install
 npm run dev
+
+---
+
+## API Endpoints
+
+🔹 POST /api/analyze-review
+Menganalisis review baru.
+
+**Request Body**
+```json
+{
+  "review": "Produk ini sangat bagus dan berkualitas"
+}
+
+**Response**
+```json
+{
+  "sentiment": "positive",
+  "key_points": ["kualitas bagus", "produk memuaskan"],
+  "created_at": "2025-01-01T10:00:00"
+}
+
+🔹GET /api/reviews
+Mengambil seluruh data
+```json
+[
+  {
+    "id": 1,
+    "review": "Produk ini sangat bagus",
+    "sentiment": "positive",
+    "key_points": ["kualitas bagus"],
+    "created_at": "2025-01-01T10:00:00"
+  }
+]
+
