@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a85ff, #b67bff);
+}
+
+.page {
+  padding: 40px;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card.blue {
+  background: #1e88e5;
+  color: white;
+}
+
+.card.blue textarea {
+  background: white;
+  color: black;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0d47a1;
+}
+
+.result {
+  margin-top: 15px;
+}
+
+.sentiment {
+  font-weight: bold;
+}
+
+.sentiment.positive {
+  color: #2e7d32;
+}
+
+.sentiment.negative {
+  color: #c62828;
+}
+
+.sentiment.neutral {
+  color: #f9a825;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-item {
+  margin-top: 15px;
+  padding: 10px;
+  background: #f4f6f8;
+  border-radius: 8px;
+}
+
+.danger {
+  background: #e53935;
+}
+
+.danger:hover {
+  background: #b71c1c;
+}
