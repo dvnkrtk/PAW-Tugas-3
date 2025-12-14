@@ -1,5 +1,6 @@
 # Product Review Analyzer
-Product Review Analyzer adalah aplikasi **AI-powered Full Stack** yang digunakan untuk menganalisis review produk berbasis teks dengan melakukan:
+
+Product Review Analyzer adalah aplikasi **AI-powered Full Stack** yang digunakan untuk menganalisis review produk berbasis teks dengan fitur:
 - Analisis sentimen menggunakan **Hugging Face**
 - Ekstraksi key points menggunakan **Google Gemini**
 - Menampilkan hasil analisis di **React Frontend**
@@ -10,7 +11,7 @@ Product Review Analyzer adalah aplikasi **AI-powered Full Stack** yang digunakan
 ## Fitur Utama
 
 - Input review produk (text-based)
-- Sentiment analysis (positive / negative / neutral)
+- Sentiment analysis (**positive / negative / neutral**)
 - Key points extraction (ringkasan poin penting)
 - Menampilkan hasil analisis secara real-time
 - Menyimpan histori review ke database
@@ -36,40 +37,13 @@ Product Review Analyzer adalah aplikasi **AI-powered Full Stack** yang digunakan
 ---
 
 ## Arsitektur Sistem
-Aplikasi ini menggunakan **arsitektur client-server** dengan pendekatan **RESTful API** dan integrasi layanan AI eksternal.
 
-## Struktur Folder
-product-review-analyzer/
-│
-├── backend/
-│   ├── app/
-│   │   ├── main.py
-│   │   ├── database.py
-│   │   ├── models.py
-│   │   ├── schemas.py
-│   │   ├── services/
-│   │   │   ├── sentiment.py
-│   │   │   └── keypoints.py
-│   │   └── routers/
-│   │       └── reviews.py
-│   ├── requirements.txt
-│   └── .env
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/api.js
-│   │   └── App.jsx
-│   └── package.json
-│
-├── README.md
+Aplikasi ini menggunakan **arsitektur client-server** dengan pendekatan **RESTful API** dan integrasi layanan AI eksternal.
 
 ---
 
-## Setup dan Cara menjalankannya
-
-### Backend Setup
+## Setup dan Cara Menjalankan
+🔹 Backend Setup
 1. Clone Repository
 ```bash
 git clone https://github.com/dvnkrtk/PAW-Tugas-3.git 
@@ -95,15 +69,11 @@ GEMINI_API_KEY=your_gemini_api_key
 ```bash
 uvicorn app.main:app --reload
 
----
-
-### Frontend Setup
+🔹 Frontend Setup
 ```bash
 cd ../frontend
 npm install
 npm run dev
-
----
 
 ## API Endpoints
 
